@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=no"></meta>
+        <meta name="description" content="profile"></meta>
+        <meta name= "author" content=""></meta>
+
+        <title>
+            Snake Game
+        </title>    
+
+        <style>
+            body{
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+                background-color: black;
+            }
+            #game-board{
+                background-color: rgb(150, 167, 167);
+                width: 100vmin;
+                height: 100vmin;
+                display: grid;
+                grid-template-rows: repeat(21, 1fr);
+                grid-template-columns: repeat(21, 1fr);
+            }
+            .snake{
+                background-color: rgb(22, 92, 22);
+                border: .40vmin dotted rgb(0, 0, 0);
+                border-radius: 5px;
+            }
+            .food{
+                background-color: rgb(236, 42, 16);
+                border: .50vmin solid rgb(11, 126, 17);
+                border-radius: 20px;
+            } 
+            .alert{
+                padding: 50px;
+                background-color: red;
+                color: whites;
+            }
+        </style>
+
+        <script src="SnakeGameReal.js" defer type="module"> </script>  <!--defer: to run html fuly first; module: to use import and export -->
+    </head>
+    <body>
+        <div id="game-board"> </div>
+    </body>
+</html>
